@@ -1,0 +1,9 @@
+<lfr-editable id="unique-id" type="text">
+   This is editable text!    
+</lfr-editable>
+
+<h1>
+  <lfr-editable id="heading" type="text">
+      This text is styled, so it will look pretty!
+  </lfr-editable>
+</h1>

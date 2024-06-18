@@ -1,0 +1,58 @@
+<div class="card">
+<div class="header">
+<#if (Image41182428.getData())?? && Image41182428.getData() != "">
+	<img alt="${Image41182428.getAttribute("alt")}" data-fileentryid="${Image41182428.getAttribute("fileEntryId")}" src="${Image41182428.getData()}" />
+</#if><#if (Text08782899.getData())??>
+	${Text08782899.getData()}
+</#if>
+</div>
+<div class="margin">
+<#if (Fieldset97349323.Text50248779.getData())??>
+	${Fieldset97349323.Text50248779.getData()}
+</#if>
+</div>
+
+<button class="my-button">Learn More</button>
+
+</div>
+
+<style>
+
+.my-button{
+color: white;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+background: rgba(0, 151, 158, 1);
+padding: 10px 20px;
+border-radius: 4px;
+border: none;
+margin-top: 20px;
+margin-left: 50px;
+margin-bottom: 0px;
+}
+
+.card{
+background-color:	#ffffff;
+border-radius: 15px;
+width: 395px;
+height: 250px;
+border: 1px;
+opacity: 0px;
+box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+.margin{
+margin-top:10px;
+margin-left: 50px;
+margin-right: 25px;
+color: grey;
+}
+
+.header{
+font-weight: bold;
+margin-top: 10px;
+}
+
+</style>
