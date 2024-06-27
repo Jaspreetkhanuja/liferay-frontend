@@ -1,0 +1,28 @@
+<#if entries?has_content>
+    <div id="accordion">
+        <#list entries as curEntry>
+            <div class="card">
+                <div class="card-header" id="heading${curEntry_index}">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse${curEntry_index}" aria-expanded="true" aria-controls="collapse${curEntry_index}">
+                            ${curEntry.getTitle(locale)}
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse${curEntry_index}" class="collapse" aria-labelledby="heading${curEntry_index}" data-parent="#accordion">
+                    <div class="card-body">
+                        <#assign 
+                            assetRenderer = curEntry.getAssetRenderer()
+                            journalArticle = assetRenderer.getAssetObject()      
+                        />
+                        <@liferay_journal["journal-article"]
+                            articleId=journalArticle.getArticleId()
+                            ddmTemplateKey="31029"
+                            groupId=journalArticle.getGroupId()
+                        />
+                    </div>
+                </div>
+            </div>
+        </#list>
+    </div>
+</#if>
