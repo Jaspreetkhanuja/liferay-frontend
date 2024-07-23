@@ -1,0 +1,37 @@
+<#if entries?has_content>
+    <style>
+        #<@portlet.namespace />custom-carousel .top-div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+					  justify-content: center;
+        }
+
+        #<@portlet.namespace />custom-carousel .carousel-card-item {
+            width: 350px; 
+            height: 300px; 
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #ccc; 
+            border-radius: 8px; 
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        #<@portlet.namespace />custom-carousel .carousel-card-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+    </style>
+    <div id="<@portlet.namespace />custom-carousel">
+			<div class="m-5 top-div">		
+        <#list entries as entry>
+            <#assign previewURL = dlUtil.getPreviewURL(entry, entry.getFileVersion(), themeDisplay, "", false, false) />
+            <div class="carousel-card-item">
+                <img alt="${htmlUtil.escapeAttribute(entry.getDescription())}"  src="${previewURL}" />
+            </div>
+        </#list>
+				</div>
+    </div>
+</#if>

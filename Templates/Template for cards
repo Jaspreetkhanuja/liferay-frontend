@@ -1,0 +1,54 @@
+<div class="custom-bg-card">
+<hr class="custom-card-hr">
+<div class="custom-card-img">
+<#if (Fieldset80981615.Image05461285.getData())?? && Fieldset80981615.Image05461285.getData() != "">
+	<img alt="${Fieldset80981615.Image05461285.getAttribute("alt")}" data-fileentryid="${Fieldset80981615.Image05461285.getAttribute("fileEntryId")}" src="${Fieldset80981615.Image05461285.getData()}" />
+</#if>
+</div>
+<div class="custom-card-title">
+<#if (Fieldset80981615.Text00806411.getData())??>
+	${Fieldset80981615.Text00806411.getData()}
+</#if>
+</div>
+<div class="custom-card-text">
+<#if (Fieldset80981615.Text04486199.getData())??>
+	${Fieldset80981615.Text04486199.getData()}
+</#if>
+</div>
+</div>
+
+<style>
+
+.custom-bg-card{
+background-color:#F0F1F1;
+width: 295px;
+height: 110px;
+border-radius: 10px;
+border: 1px;
+}
+
+.custom-card-title{
+margin-left:15px;
+color: grey;
+margin-top: 8px;
+}
+
+.custom-card-img{
+margin-left: 15px;
+}
+
+.custom-card-text{
+font-size: 30px;
+font-weight: 700;
+line-height: 45px;
+text-align: right;
+margin-right: 20px;
+margin-bottom: 10px;
+}
+
+.custom-card-hr{
+border-width:0;
+}
+
+</style>
+

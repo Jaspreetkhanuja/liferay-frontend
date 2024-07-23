@@ -1,0 +1,98 @@
+<footer class="custom-footer p-5">
+    <div class="container">
+        <div class="row">
+            <div class="custom-footer-navbar col">
+                [@liferay.navigation_menu
+                instance_id="${fragmentEntryLinkNamespace}_TOP_HEADER3"
+                default_preferences=freeMarkerPortletPreferences.getPreferences({"siteNavigationMenuName":
+                "Footer", "displayStyle":"ddmTemplate_LIST-MENU-FTL"}) /]
+            </div>
+            <div class="col-auto">
+                <div
+                    class="font-weight-bold text-brand-primary-darken-1 text-5"
+                >
+                    <lfr-editable id="footers4" type="text">
+                        Suivez-nous
+                    </lfr-editable>
+                </div>
+                <div class="d-flex footer-social-icons">
+                    [#list 0..configuration.numberOfIcons-1 as i]
+                        [#assign index = "${i+1}" /]
+                        [#if i lt 9]
+                            [#assign index = "0${i+1}" /]
+                        [/#if]
+                        <img
+                            alt=""
+                            class="footer-image 2"
+                            class="pt-2 pt-md-4 px-3"
+                            data-lfr-editable-id="${index}-footer-image"
+                            data-lfr-editable-type="image"
+                            height="49"
+                            src="[resources:facebook.svg]"
+                            width="49"
+                        />
+                    [/#list]
+                </div>
+                <lfr-editable
+                    class="text-brand-primary-darken-1 font-weight-bold"
+                    id="footer-question-text"
+                    type="text"
+                >
+                    Vous avez des questions ?
+                </lfr-editable>
+                <lfr-editable
+                    class="text-brand-primary-darken-1 font-weight-bold"
+                    id="footer-phone-number"
+                    type="text"
+                >
+                    02 22 06 20 30
+                </lfr-editable>
+                <lfr-editable
+                    class="text-brand-primary-darken-1"
+                    id="footer-call-price"
+                    type="text"
+                >
+                    (prix d'un appel local)
+                </lfr-editable>
+            </div>
+        </div>
+    </div>
+</footer>
+.custom-footer {
+    background-color: var(--color-accent-3);
+}
+.footer-image img {
+    padding: 0px !important;
+}
+.footer-social-icons {
+    gap: 17px;
+    margin: 19px 0px;
+}
+.custom-footer a:focus-visible,
+.custom-footer a {
+    box-shadow: none !important;
+    outline-color: none !important;
+    padding-left: 0px !important;
+    color: var(--color-brand-primary-darken-1) !important;
+    font-weight: 400 !important;
+}
+.custom-footer-navbar ul li {
+    display: block;
+    padding: 0px;
+    color: var(--color-brand-primary-darken-1);
+    font-weight: 700;
+    line-height: 31px;
+    font-size: 18px;
+}
+.custom-footer-navbar .level-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0px;
+}
+.custom-footer-navbar .level-1 li {
+    padding: 2px 0px !important;
+}
+.custom-footer-navbar ul li ul {
+    padding: 0px !important;
+}

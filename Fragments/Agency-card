@@ -1,0 +1,193 @@
+<div class="agency">
+    <div class="position-relative">
+        <div>
+            <img
+                alt=""
+                class="agency-background-image w-100"
+                data-lfr-editable-id="agency-background-image"
+                data-lfr-editable-type="image"
+                src="[resources:Illustration-Angers-maison-Mojito-Frais-1.svg]"
+            />
+        </div>
+        <div
+            class="agency-card container-fluid d-flex justify-content-center position-absolute"
+        >
+            <div class="card">
+                <div class="card-columns">
+                    <div class="">
+                        <div class="container content-section">
+                            <div class="agency-info mt-4">
+                                <lfr-editable id="agencyTitle" type="text">
+                                    <h1 class="text-11">
+                                        Votre agence à Bordeaux ouest - Merignac
+                                    </h1>
+                                </lfr-editable>
+                                <lfr-editable
+                                    id="agencyDescription"
+                                    type="text"
+                                >
+                                    <p>
+                                        Ménage, repassage, entretien du linge,
+                                        courses, aide à la préparation des
+                                        repas. Les lavandières prennent soin de
+                                        votre intérieur à Bordeaux Ouest -
+                                        Mérignac.
+                                    </p>
+                                </lfr-editable>
+                                <div
+                                    class="location-info d-flex align-items-start mt-3"
+                                >
+                                    <img
+                                        alt=""
+                                        class="agency-card-icon"
+                                        data-lfr-editable-id="locationIcon"
+                                        data-lfr-editable-type="image"
+                                        src="[resources:picto-violet-localisation.svg]"
+                                    />
+                                    <lfr-editable id="locationText" type="text">
+                                        Le Taillan-Médoc, Le Haillan,
+                                        Martignas-sur-Jalle, Mérignac,
+                                        Saint-Médard-en-Jalle,
+                                        Saint-Aubin-de-Médoc BORDEAUX, 33000
+                                    </lfr-editable>
+                                </div>
+                                <div
+                                    class="phone-info d-flex align-items-start mt-3"
+                                >
+                                    <img
+                                        alt=""
+                                        class="agency-card-icon"
+                                        data-lfr-editable-id="phoneIcon"
+                                        data-lfr-editable-type="image"
+                                        src="[resources:picto-violet-telephone.svg]"
+                                    />
+                                    <lfr-editable id="phoneText" type="text">
+                                        05 40 24 05 06
+                                    </lfr-editable>
+                                </div>
+                                <div
+                                    class="hours-info d-flex align-items-start mt-3"
+                                >
+                                    <img
+                                        alt=""
+                                        class="agency-card-icon"
+                                        data-lfr-editable-id="clockIcon"
+                                        data-lfr-editable-type="image"
+                                        src="[resources:picto-violet-calandar.svg]"
+                                    />
+                                    <div>
+                                        <h6 class="text-brand-primary-darken-1">
+                                            <lfr-editable
+                                                id="hoursTitle"
+                                                type="text"
+                                            >
+                                                Horaires d'ouverture
+                                            </lfr-editable>
+                                        </h6>
+                                        <lfr-editable
+                                            id="hoursText1"
+                                            type="text"
+                                        >
+                                            Sans rendez-vous
+                                        </lfr-editable>
+                                        <lfr-editable
+                                            id="hoursText2"
+                                            type="text"
+                                        >
+                                            Mardi et jeudi : 9h - 12h
+                                        </lfr-editable>
+                                        <lfr-editable
+                                            id="hoursText3"
+                                            type="text"
+                                        >
+                                            Sur rendez-vous
+                                        </lfr-editable>
+                                        <lfr-editable
+                                            id="hoursText4"
+                                            type="text"
+                                        >
+                                            Du lundi au vendredi : 9h - 12h et
+                                            14h - 18h
+                                        </lfr-editable>
+                                    </div>
+                                </div>
+                                <a
+                                    data-lfr-editable-id="requestQuoteButton"
+                                    data-lfr-editable-type="link"
+                                >
+                                    Je demande un devis
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img
+                            alt=""
+                            class="agency-card-image h-100 w-100"
+                            data-lfr-editable-id="agency-card-image"
+                            data-lfr-editable-type="image"
+                            src="[resources:Rectangle-6667247.svg]"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ .agency {
+    height: 80rem;
+}
+.agency-info {
+    padding: 0px 40px;
+}
+.agency-card {
+    top: 60%;
+}
+.agency-card .card {
+    width: 1127px;
+    border-radius: 15px;
+}
+.content-section {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+.content-section .agency-info h1 {
+    color: var(--color-brand-primary);
+}
+.content-section .agency-info p {
+    margin: 10px 0;
+}
+.content-section .location-info img,
+.content-section .phone-info img,
+.content-section .hours-info img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+.content-section .agency-info .btn {
+    display: inline-block;
+    background-color: var(--color-brand-primary);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.agency-card-image {
+    object-fit: cover;
+}
+@media (min-width: 1140px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media (max-width: 1140px) {
+    .card-columns {
+        column-count: 1;
+    }
+    .agency-info {
+        padding: 0;
+    }
+}

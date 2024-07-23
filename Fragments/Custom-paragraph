@@ -1,0 +1,60 @@
+<p  data-lfr-editable-id="paragraph" data-lfr-editable-type="rich-text" class="custom-style">
+ Offrir de l'autonomie, une rémunération au dessus de la moyenne du marché et des conditions de travail avantageuses: c'est notre engagement auprès des Lavandières et Lavandiers.
+  </p>
+<style>
+	.custom-style{
+		width: 100%;
+		color: ${configuration.paragraphColor};
+		font-size:  ${configuration.size};
+		font-family:  ${configuration.Font};
+		line-height:  ${configuration.lineHeight};
+		font-style:  ${configuration.italic?string('italic', 'unset') };
+		text-decoration-line:  ${configuration.underline?string('underline', 'unset') };
+		
+	}
+</style>
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "defaultValue": "#392A3C",
+                    "label": "color",
+                    "name": "paragraphColor",
+                    "type": "colorPicker"
+                },
+                {
+                    "name": "Font",
+                    "label": "font",
+                    "type": "text",
+                    "defaultValue": "Roboto"
+                },
+                {
+                    "defaultValue": "16px",
+                    "label": "size",
+                    "name": "size",
+                    "type": "length"
+                },
+							{
+                    "defaultValue": "28px",
+                    "label": "height ",
+                    "name": "lineHeight",
+                    "type": "length"
+                },
+							 {
+                    "name": "italic",
+                    "label": "Italic",
+                    "type": "checkbox",
+                    "defaultValue": false
+                },
+							 {
+                    "name": "underline",
+                    "label": "Underline",
+                    "type": "checkbox",
+                    "defaultValue": false
+                }
+						],
+            "label": "Configurations"
+        }
+    ]
+}
